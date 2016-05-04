@@ -2,12 +2,12 @@ Robin Elahi's PhD data
 ======================
 
 2016-05-03  
-elahi.robin 'at' gmail
+elahi.robin 'at' gmail  
 [my website](https://web.stanford.edu/~elahi/)
 
 This is a repository for the ecological field data I collected during my PhD at the University of Washington. By archiving the raw data, and providing some metadata, I hope that these data can be useful by anyone (including myself!) in the future. 
 
-Note that I am providing the raw data - not the data that were processed and analyzed in publications (see below). The tidied raw data can be found in the 'output' folder for each type of dataset: mobile fauna in quadrats, mobile fauna on transects, and sessile taxa in quadrats. 
+Note that I am providing the raw data - not the processed versions that were used in publications (see below). The tidied raw data can be found in the 'output' folder for each type of dataset: mobile fauna in quadrats, mobile fauna on transects, and sessile taxa in quadrats. 
 
 See the pubs for descriptions of the field methods. 
 
