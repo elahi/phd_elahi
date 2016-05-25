@@ -67,6 +67,6 @@ head(dat)
 # Check dates
 with(dat, table(comm.date, transect))
 
-write.csv(dat, 'output/elahi_mobile_tran_data.csv')
+write.csv(dat, 'Elahi_mobile_transect/output/elahi_mobile_tran_data.csv')
 unique(dat$surveyor)
 
