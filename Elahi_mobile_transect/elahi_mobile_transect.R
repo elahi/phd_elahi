@@ -3,6 +3,7 @@
 # Mobile taxa on transects
 # Author: Robin Elahi
 # Date: 160503
+# NEED TO FIX DATES - IN SEPTEMBER 2011 (?)
 #################################################
 
 rm(list=ls(all=TRUE))
@@ -14,7 +15,7 @@ library(tidyr)
 library(readr)
 library(lubridate)
 
-dat <- read_csv("./data/mobiledata_160503.csv")
+dat <- read_csv("Elahi_mobile_transect/data/mobiledata_160503.csv")
 glimpse(dat)
 
 # Examine data
@@ -58,10 +59,13 @@ sort(unique(dat$code))
 sppMetaData <- data.frame("code" = sort(unique(code2)), 
                        "species" = NA)
 
-write.csv(sppMetaData, 'output/sppMetaData.csv')
+# write.csv(sppMetaData, 'output/sppMetaData.csv')
 
 dat$code <- code2
 head(dat)
+
+# Check dates
+with(dat, table(comm.date, transect))
 
 write.csv(dat, 'output/elahi_mobile_tran_data.csv')
 unique(dat$surveyor)

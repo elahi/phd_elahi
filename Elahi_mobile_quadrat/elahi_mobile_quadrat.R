@@ -1,6 +1,6 @@
 #################################################
-# Prepare raw data for biodiversity change database
-# Author: Robin Elahi
+# Tidy up PhD data
+# Mobile taxa in quadrats
 # Date: 151218
 #################################################
 # Datasets: Robin Elahi
