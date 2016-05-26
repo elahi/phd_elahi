@@ -99,9 +99,6 @@ dat2 %>% filter(urch == "u_rem" & code == "SFR") %>%
 # (PLOS1 paper)
 sort(unique(dat2$comm.date))
 
-crap <- ymd(unique(dat2$comm.date))
-crap > ymd(20090417)
-
 dat3 <- dat2 %>% 
   mutate(comm.date = ymd(comm.date), 
          removals = ifelse(
@@ -109,7 +106,6 @@ dat3 <- dat2 %>%
     "yes", "no"))
 
 with(dat3, table(removals))
-
 
 write.csv(dat3, 'Elahi_mobile_transect/output/elahi_mobile_tran_data.csv')
 unique(dat$surveyor)
