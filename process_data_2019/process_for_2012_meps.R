@@ -108,7 +108,7 @@ mobq3 <- mobq2 %>%
   ungroup()
 
 ses3 <- ses2 %>% 
-  select(quad, site, space:richness) %>% 
+  select(quad, site, space:simpsondiv) %>% 
   rename(quadrat = quad)
 
 dat <- left_join(mobq3, ses3, by = c("quadrat", "site"))
